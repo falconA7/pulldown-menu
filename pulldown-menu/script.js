@@ -1,6 +1,7 @@
 const lang = document.querySelector('html').lang;
 
 let opt;
+
 if(lang === 'ja'){
     opt = document.querySelector('option[value="index.html"]');
 }else if(lang === 'en'){
@@ -10,7 +11,6 @@ if(lang === 'ja'){
 }
 
 opt.selected = true;
-
 document.getElementById('form').select.onchange = function(){
     location.href = document.getElementById('form').select.value
 }
