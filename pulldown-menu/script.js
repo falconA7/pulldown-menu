@@ -23,7 +23,7 @@ document.getElementById('lang-form').select.onchange = function(){
 const e = document.getElementById('event-button');
 e.addEventListener('click', () => {
     const li =document.createElement('li');
-    const text = document.createTextNode(textbox.value);
+    const text = document.createTextNode(textBox.value);
     li.appendChild(text);
     const listElement = document.getElementById('list');
     listElement.appendChild(li);
