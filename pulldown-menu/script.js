@@ -16,14 +16,17 @@ switch(lang){
 }
 
 opt.selected = true;
-document.getElementById('form').select.onchange = function(){
-    location.href = document.getElementById('form').select.value
+document.getElementById('lang-form').select.onchange = function(){
+    location.href = document.getElementById('lang-form').select.value
 }
 
 const e = document.getElementById('event-button');
 e.addEventListener('click', () => {
     const li =document.createElement('li');
-    const text = document.createTextNode('test');
+    const text = document.createTextNode(textbox.value);
+    li.appendChild(text);
+    const listElement = document.getElementById('list');
+    listElement.appendChild(li);
 },false);
 
 
